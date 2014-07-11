@@ -97,8 +97,8 @@ table {
 #content {
     width: 50em;
     max-width: 640px;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
 }
 
 /* #header {
@@ -108,14 +108,14 @@ table {
 
 #table-of-contents {
     width: 15em;
-    float: left;
+    /* float: left; */
     overflow: auto;
 }
 
 /* #main { */
 div.outline-2 {
     width: 40em;
-    float: right;
+    /* float: right; */
     /* The lines below are useful if the "main" div isn't available and
        div.outline-2 has to be used. */
     position: relative;
@@ -123,7 +123,8 @@ div.outline-2 {
 
 #postamble {
     clear: both;
-    text-align: center;
+    /* text-align: center; */
+    margin-left: 5em;
 }
 
 div.outline-2 pre {
