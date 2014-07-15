@@ -19,74 +19,87 @@ stands, the centering and width make the result kind of ugly. -- Ryan Matlock
 
 /* @group Fonts */
 
-* {
+*
+{
     font-family: sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6,
 h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+{
     font-family: sans-serif;
 }
 
-pre {
+pre
+{
     font-family: monospace;
 }
 
-#text-table-of-contents a {
+#text-table-of-contents a
+{
     font-family: sans-serif;
 }
 
-code {
+code
+{
     font-family: monospace;
 }
 
 /* @end */
 
 /* @group Baseline */
-body {
+body
+{
     font-size: 10pt;
     line-height: 1.5em;
     padding: 0;
     margin: 0;
 }
-h1 {
+h1
+{
     margin: 0;
     font-size: 1.6666666666666667em;
     line-height: 0.9em;
     margin-bottom: 0.9em;
 }
-h2 {
+h2
+{
     margin: 0;
     font-size: 1.5em;
     line-height: 1em;
     margin-bottom: 1em;
 }
-h3 {
+h3
+{
     margin: 0;
     font-size: 1.3333333333333333em;
     line-height: 1.125em;
     margin-bottom: 1.125em;
 }
-h4 {
+h4
+{
     margin: 0;
     font-size: 1.1666666666666667em;
     line-height: 1.2857142857142858em;
     margin-bottom: 1.2857142857142858em;
 }
-p, ul, blockquote, pre, td, th, label {
+p, ul, blockquote, pre, td, th, label
+{
     margin: 0;
     font-size: 1em;
     line-height: 1.5em;
     margin-bottom: 1.5em;
 }
-p.small, #postamble {
+p.small, #postamble
+{
     margin: 0;
     font-size: 0.8333333333333334em;
     line-height: 1.8em;
     margin-bottom: 1.8em;
 }
-table {
+table
+{
     border-collapse: collapse;
     margin-bottom: 1.5em;
 }
@@ -94,39 +107,46 @@ table {
 
 /* @group Layout */
 
-#content {
+#content
+{
     width: 50em;
     max-width: 640px;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
 }
 
-/* #header {
+/* #header
+{
     height: 10em;
 }
 */
 
-#table-of-contents {
+#table-of-contents
+{
     width: 15em;
-    float: left;
+    /* float: left; */
     overflow: auto;
 }
 
 /* #main { */
-div.outline-2 {
+div.outline-2
+{
     width: 40em;
-    float: right;
+    /* float: right; */
     /* The lines below are useful if the "main" div isn't available and
        div.outline-2 has to be used. */
     position: relative;
 }
 
-#postamble {
+#postamble
+{
     clear: both;
-    text-align: center;
+    /* text-align: center; */
+    margin-left: 5em;
 }
 
-div.outline-2 pre {
+div.outline-2 pre
+{
     width: 40em;
     overflow: auto;
 }
@@ -135,12 +155,14 @@ div.outline-2 pre {
 
 /* @group Header */
 
-h1.title {
+h1.title
+{
     margin-top: 10px;
     text-align: center;
 }
 
-h1.title {
+h1.title
+{
     font-size: 4em;
     font-weight: bold;
     /* letter-spacing: -0.1em; */
@@ -151,15 +173,18 @@ h1.title {
 
 /* @group Org Keywords */
 
-.todo {
+.todo
+{
     color: red;
 }
 
-.done {
+.done
+{
     color: green;
 }
 
-.tag {
+.tag
+{
     color: blue;
     text-transform: lowercase;
     /* This will be obscured by the surrounding span tag, so blank everything. */
@@ -170,14 +195,17 @@ h1.title {
     right: 1em; */
 }
 
-.timestamp {
+.timestamp
+{
 }
 
-.timestamp-kwd  {
+.timestamp-kwd 
+{
     /* keyword associated with a time stamp, like SCHEDULED */
 }
 
-.target {
+.target
+{
     /* target for links */
 }
 
@@ -185,12 +213,14 @@ h1.title {
 
 /* @group Table of Contents */
 
-#table-of-contents h2 {
+#table-of-contents h2
+{
     /* letter-spacing: -0.1em; */
 }
 
 #table-of-contents ul,
-#table-of-contents ol {
+#table-of-contents ol
+{
     padding-left: 1em;
 }
 
@@ -198,16 +228,19 @@ h1.title {
 
 /* @group Outline Level 2 */
 
-.outline-2 h2 {
+.outline-2 h2
+{
     background: #ffc;
     border-bottom: 1px solid #ccc;
 }
 
-.outline-2 h2, .outline-2 h3 {
+.outline-2 h2, .outline-2 h3
+{
     /* letter-spacing: -0.05em; */
 }
 
-.outline-2 {
+.outline-2
+{
     padding: 5px;
     /* margin-bottom: 10px; */
     /* border-top: 1px solid #ccc; */
@@ -215,55 +248,36 @@ h1.title {
 
 /* @end */
 
-td {
+td
+{
     border: 1px solid #ccc;
 }
 
 
-h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span
+{
     background-color: #eee;
     padding: 2px;
     border: 1px solid #ccc;
 }
 
-.outline-1, .outline-2, .outline-3, .outline-4, .outline-5, .outline-6 {
+.outline-1, .outline-2, .outline-3, .outline-4, .outline-5, .outline-6
+{
     margin-left: 2em;
 }
 
-a {
+a
+{
     text-decoration: none;
     color: #57d; /* TODO: Find a better colour for this. */
 }
 
-a:hover {
+a:hover
+{
     border-bottom: 1px dotted #57d;
 }
 
-#postamble p {
-    margin: 0px;
-}
-
-/*
-Styling for the printed page
-
-(http://www.smashingmagazine.com/2011/11/24/how-to-set-up-a-print-style-sheet/ seems like a decent guide)
-*/
-
-@media print
+#postamble p
 {
-    #table-of-contents
-    {
-        display: none
-    }
-
-    h1
-    {
-        font-size: 20pt;
-    }
-
-    h2
-    {
-        font size: 16pt;
-    }
-
+    margin: 0px;
 }
