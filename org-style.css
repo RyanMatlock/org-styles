@@ -296,12 +296,33 @@ Styling for the printed page
 
     h1
     {
-        font-size: 20pt;
+        font-size: 18pt;
     }
 
     h2
     {
-        font size: 16pt;
+        font-size: 16pt;
+    }
+    
+    h3
+    {
+        font-size: 14pt;
     }
 
+    h4
+    {
+        font-size: 12pt;
+    }
+
+    #content
+    {
+        width: auto;
+        max-width: auto;
+    }
+
+    div.outline-2
+    {
+        width: auto;
+        float: none;
+    }
 }
