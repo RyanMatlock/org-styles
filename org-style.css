@@ -289,21 +289,18 @@ Styling for the printed page
 
 @media print
 {
-    #table-of-contents
-   
-  {
+    #table-of-contents   
+    {
         display: none
     }
 
     h1
-   
-  {
+    {
         font-size: 20pt;
     }
 
     h2
-   
-  {
+    {
         font size: 16pt;
     }
 
