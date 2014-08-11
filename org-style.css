@@ -281,6 +281,11 @@ a:hover
     margin: 0px;
 }
 
+.IN_PROGRESS .ON_HOLD
+{
+    color: orange;
+}
+
 /*
 Styling for the printed page
 
