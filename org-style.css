@@ -109,8 +109,9 @@ table
 
 #content
 {
-    width: 50em;
-    max-width: 640px;
+    width: 60em;
+    /* max-width: 800px; */
+    max-width: auto;
     margin-left: auto;
     margin-right: auto;
 }
@@ -131,7 +132,8 @@ table
 /* #main { */
 div.outline-2
 {
-    width: 40em;
+    /* width needs to be larger than 40em */
+    width: 52em;
     float: right;
     /* The lines below are useful if the "main" div isn't available and
        div.outline-2 has to be used. */
@@ -146,7 +148,7 @@ div.outline-2
 
 div.outline-2 pre
 {
-    width: 40em;
+    width: auto;
     overflow: auto;
 }
 
@@ -162,7 +164,7 @@ h1.title
 
 h1.title
 {
-    font-size: 4em;
+    font-size: 2.5em;
     font-weight: bold;
     /* letter-spacing: -0.1em; */
     margin-bottom: 0.2em;
