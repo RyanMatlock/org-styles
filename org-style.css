@@ -296,6 +296,12 @@ a:hover
     margin: 0px;
 }
 
+.todo, .done
+{
+    font-family: monospace;
+    font-weight: bold;
+}
+
 .IN_PROGRESS, .ON_HOLD
 {
     color: orange;
