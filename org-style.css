@@ -46,6 +46,11 @@ code
     font-family: monospace;
 }
 
+.src, .src > span
+{
+    font-family: monospace;
+}
+
 /* @end */
 
 /* @group Baseline */
