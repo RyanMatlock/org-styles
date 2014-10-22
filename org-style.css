@@ -46,6 +46,8 @@ code
     font-family: monospace;
 }
 
+/* foo > bar means children of foo of type bar
+   see: http://css-tricks.com/child-and-sibling-selectors/ */
 .src, .src > span
 {
     font-family: monospace;
