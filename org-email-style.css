@@ -128,8 +128,9 @@ table
 
 #table-of-contents
 {
-    width: 15em;
-    /* float: left; */
+    margin-top: 2ex;
+    width: 40em;
+    float: left;
     overflow: auto;
 }
 
@@ -149,6 +150,12 @@ div.outline-2
     /* text-align: center; */
     margin-left: 5em;
 }
+
+#footnotes
+{
+    clear: both;
+}
+
 
 div.outline-2 pre
 {
