@@ -129,6 +129,7 @@ table
 
 #table-of-contents
 {
+    margin-top: 2ex;
     width: 40em;
     float: left;
     overflow: auto;
@@ -149,6 +150,11 @@ div.outline-2
 {
     clear: both;
     text-align: center;
+}
+
+#footnotes
+{
+    clear: both;
 }
 
 div.outline-2 pre
