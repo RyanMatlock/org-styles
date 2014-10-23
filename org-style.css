@@ -172,7 +172,7 @@ ol li ol li ol li ol li
 div.outline-2
 {
     /* width needs to be larger than 40em */
-    width: 52em;
+    width: 55em;
     float: right;
     /* The lines below are useful if the "main" div isn't available and
        div.outline-2 has to be used. */
@@ -192,11 +192,17 @@ div.outline-2
 
 div.outline-2 pre
 {
-    width: auto;
+    /* width: auto; */
     overflow: auto;
     padding: 0px;
     padding-left: 3px;
     padding-right: 3px;
+}
+
+pre
+{
+    /* width should be 80em wide to accommodate a line of text */
+    width = 80em;
 }
 
 /* @end */
@@ -349,6 +355,11 @@ Styling for the printed page
 
 @media print
 {
+    body
+    {
+        font-size: 8pt;
+    }
+
     #table-of-contents   
     {
         display: none
@@ -392,7 +403,7 @@ Styling for the printed page
         /* make sure you can see everything when you print
            source: http://www.webdeveloper.com/forum/showthread.php?136761-Print-Contents-of-lt-div-overflow-auto-gt 
            not working yet, but not the biggest deal */
-        width: 100%;
+        /* width: 100%; */
         overflow: visible;
         height: auto;
     }
