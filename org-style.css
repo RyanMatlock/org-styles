@@ -31,7 +31,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
     font-family: sans-serif;
 }
 
-pre
+/* foo > bar means children of foo of type bar
+   see: http://css-tricks.com/child-and-sibling-selectors/ */
+pre, code, .src, .src > span
 {
     font-family: monospace;
 }
@@ -39,18 +41,6 @@ pre
 #text-table-of-contents a
 {
     font-family: sans-serif;
-}
-
-code
-{
-    font-family: monospace;
-}
-
-/* foo > bar means children of foo of type bar
-   see: http://css-tricks.com/child-and-sibling-selectors/ */
-.src, .src > span
-{
-    font-family: monospace;
 }
 
 /* @end */
@@ -204,6 +194,9 @@ div.outline-2 pre
 {
     width: auto;
     overflow: auto;
+    padding: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 /* @end */
@@ -391,5 +384,16 @@ Styling for the printed page
     {
         width: auto;
         float: none;
+    }
+
+    pre, .src, .src > span
+    {
+        box-shadow: 0px 0px 0px;
+        /* make sure you can see everything when you print
+           source: http://www.webdeveloper.com/forum/showthread.php?136761-Print-Contents-of-lt-div-overflow-auto-gt 
+           not working yet, but not the biggest deal */
+        width: 100%;
+        overflow: visible;
+        height: auto;
     }
 }
