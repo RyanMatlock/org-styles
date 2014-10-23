@@ -110,6 +110,47 @@ table
     border-collapse: collapse;
     margin-bottom: 1.5em;
 }
+
+/* Style ordered lists like LaTeX:
+   
+   1. foo
+   2. bar
+      a. baz
+         I. blah
+         II. bag
+             A. shebang
+             B. bloop
+      b. qux
+         I. boop
+         II. beep
+      c. spam
+   3. eggs
+   4. ham
+   
+   source: http://stackoverflow.com/questions/12731020/how-to-have-sub-ordered-lists-correctly
+*/
+
+ol li
+{
+    list-style-type: decimal;
+}
+
+ol li ol li
+{
+    list-style-type: lower-alpha;
+    content: ") ";
+}
+
+ol li ol li ol li
+{
+    list-style-type: lower-roman;
+}
+
+ol li ol li ol li ol li
+{
+    list-style-type: upper-alpha;
+}
+
 /* @end */
 
 /* @group Layout */
